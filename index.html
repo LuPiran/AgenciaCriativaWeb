@@ -10,49 +10,50 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="estilos.css">
 </head>
-<body>
+<body class="pagina">
   <header class="cabecalho">
     <div class="cabecalho__inner">
       <a href="#home" class="logo" aria-label="Agência Criativa Web — início">
-        <span class="logo__mark" aria-hidden="true"></span>
-        <span class="logo__texto">Agência Criativa <strong>Web</strong></span>
+        <span class="logo__marca" aria-hidden="true"></span>
+        <span class="logo__texto">Agência Criativa <span class="logo__destaque">Web</span></span>
       </a>
 
-      <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-hidden="true">
-      <label for="menu-toggle" class="menu-hamburguer" aria-label="Abrir menu de navegação">
-        <span></span>
-        <span></span>
-        <span></span>
+      <input type="checkbox" id="cabecalho-menu" class="cabecalho__checkbox" aria-hidden="true">
+      <label for="cabecalho-menu" class="cabecalho__menu-btn" aria-label="Abrir menu de navegação">
+        <span class="cabecalho__menu-bar"></span>
+        <span class="cabecalho__menu-bar"></span>
+        <span class="cabecalho__menu-bar"></span>
       </label>
 
-      <nav class="nav" aria-label="Principal">
-        <ul class="nav__lista">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#sobre">Sobre Nós</a></li>
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#depoimentos">Depoimentos</a></li>
-          <li><a href="#contato">Contato</a></li>
+      <nav class="cabecalho__nav" aria-label="Principal">
+        <ul class="cabecalho__lista">
+          <li class="cabecalho__item"><a class="cabecalho__link" href="#home">Home</a></li>
+          <li class="cabecalho__item"><a class="cabecalho__link" href="#sobre">Sobre Nós</a></li>
+          <li class="cabecalho__item"><a class="cabecalho__link" href="#servicos">Serviços</a></li>
+          <li class="cabecalho__item"><a class="cabecalho__link" href="#depoimentos">Depoimentos</a></li>
+          <li class="cabecalho__item"><a class="cabecalho__link" href="#contato">Contato</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main>
+  <main class="principal">
     <section id="home" class="secao hero">
       <div class="hero__conteudo">
         <p class="hero__selo">Design que converte · Web que performa</p>
-        <h1 class="hero__titulo">Sua marca no centro da experiência digital</h1>
-        <p class="hero__texto">
-          Somos a <strong>Agência Criativa Web</strong>: unimos estratégia, estética e tecnologia para criar
+        <h1 class="hero__titulo titulo titulo--display">Sua marca no centro da experiência digital</h1>
+        <p class="hero__texto texto texto--secundario">
+          Somos a <strong class="texto--destaque">Agência Criativa Web</strong>: unimos estratégia, estética e tecnologia para criar
           presenças digitais memoráveis e mensuráveis.
         </p>
         <div class="hero__acoes">
-          <a href="#contato" class="btn btn--primario">Fale conosco</a>
-          <a href="#servicos" class="btn btn--secundario">Ver serviços</a>
+          <a href="#contato" class="botao botao--primario">Fale conosco</a>
+          <a href="#servicos" class="botao botao--secundario">Ver serviços</a>
         </div>
       </div>
-      <figure class="hero__media">
+      <figure class="hero__midia midia midia--proporcao-3-2">
         <img
+          class="midia__img"
           src="https://picsum.photos/seed/criativa-hero/960/640"
           srcset="
             https://picsum.photos/seed/criativa-hero/480/320 480w,
@@ -70,30 +71,31 @@
       </figure>
     </section>
 
-    <section id="sobre" class="secao sobre">
+    <section id="sobre" class="secao sobre sobre--destaque">
       <div class="container">
-        <header class="secao__cabecalho">
-          <h2 class="secao__titulo">Sobre Nós</h2>
-          <p class="secao__subtitulo">Propósito, método e valores que guiam cada entrega.</p>
+        <header class="secao-cabecalho">
+          <h2 class="secao-cabecalho__titulo titulo titulo--secao">Sobre Nós</h2>
+          <p class="secao-cabecalho__subtitulo texto texto--secundario">Propósito, método e valores que guiam cada entrega.</p>
         </header>
-        <div class="sobre__grid">
-          <div class="sobre__texto">
-            <p>
+        <div class="sobre__layout">
+          <div class="sobre__coluna sobre__coluna--texto">
+            <p class="sobre__paragrafo texto texto--secundario">
               Há mais de uma década ajudamos marcas a se destacarem no ambiente online com identidade
               consistente e produtos digitais pensados para o usuário final.
             </p>
-            <p>
-              Nosso diferencial está na <strong>colaboração contínua</strong>: ouvimos, prototipamos,
+            <p class="sobre__paragrafo texto texto--secundario">
+              Nosso diferencial está na <strong class="texto--destaque">colaboração contínua</strong>: ouvimos, prototipamos,
               testamos e refinamos até que cada pixel e cada linha de código reflitam a essência do seu negócio.
             </p>
-            <ul class="sobre__valores">
-              <li><span>Transparência</span> em prazos e entregas</li>
-              <li><span>Excelência</span> em UX e performance</li>
-              <li><span>Inovação</span> com propósito e acessibilidade</li>
+            <ul class="sobre__valores lista-valores">
+              <li class="lista-valores__item"><span class="lista-valores__rotulo">Transparência</span> em prazos e entregas</li>
+              <li class="lista-valores__item"><span class="lista-valores__rotulo">Excelência</span> em UX e performance</li>
+              <li class="lista-valores__item"><span class="lista-valores__rotulo">Inovação</span> com propósito e acessibilidade</li>
             </ul>
           </div>
-          <figure class="sobre__media">
+          <figure class="sobre__midia midia midia--proporcao-4-3">
             <img
+              class="midia__img"
               src="https://picsum.photos/seed/criativa-sobre/800/600"
               srcset="
                 https://picsum.photos/seed/criativa-sobre/400/300 400w,
@@ -114,58 +116,58 @@
 
     <section id="servicos" class="secao servicos">
       <div class="container">
-        <header class="secao__cabecalho">
-          <h2 class="secao__titulo">Serviços</h2>
-          <p class="secao__subtitulo">Soluções integradas para sua presença digital.</p>
+        <header class="secao-cabecalho">
+          <h2 class="secao-cabecalho__titulo titulo titulo--secao">Serviços</h2>
+          <p class="secao-cabecalho__subtitulo texto texto--secundario">Soluções integradas para sua presença digital.</p>
         </header>
-        <div class="servicos__grid">
-          <article class="card-servico">
-            <div class="card-servico__icone" aria-hidden="true">◆</div>
-            <h3 class="card-servico__titulo">Design gráfico</h3>
-            <p class="card-servico__desc">Identidade visual, peças para redes e materiais impressos com consistência de marca.</p>
+        <div class="servicos__grade grade-servicos">
+          <article class="servico-card">
+            <div class="servico-card__icone" aria-hidden="true">◆</div>
+            <h3 class="servico-card__titulo titulo titulo--card">Design gráfico</h3>
+            <p class="servico-card__descricao texto texto--secundario">Identidade visual, peças para redes e materiais impressos com consistência de marca.</p>
           </article>
-          <article class="card-servico">
-            <div class="card-servico__icone" aria-hidden="true">◇</div>
-            <h3 class="card-servico__titulo">Desenvolvimento web</h3>
-            <p class="card-servico__desc">Sites e aplicações rápidas, responsivas e preparadas para SEO e acessibilidade.</p>
+          <article class="servico-card">
+            <div class="servico-card__icone" aria-hidden="true">◇</div>
+            <h3 class="servico-card__titulo titulo titulo--card">Desenvolvimento web</h3>
+            <p class="servico-card__descricao texto texto--secundario">Sites e aplicações rápidas, responsivas e preparadas para SEO e acessibilidade.</p>
           </article>
-          <article class="card-servico">
-            <div class="card-servico__icone" aria-hidden="true">○</div>
-            <h3 class="card-servico__titulo">Branding</h3>
-            <p class="card-servico__desc">Naming, posicionamento e diretrizes para uma marca reconhecível e duradoura.</p>
+          <article class="servico-card">
+            <div class="servico-card__icone" aria-hidden="true">○</div>
+            <h3 class="servico-card__titulo titulo titulo--card">Branding</h3>
+            <p class="servico-card__descricao texto texto--secundario">Naming, posicionamento e diretrizes para uma marca reconhecível e duradoura.</p>
           </article>
-          <article class="card-servico">
-            <div class="card-servico__icone" aria-hidden="true">▣</div>
-            <h3 class="card-servico__titulo">UX / UI</h3>
-            <p class="card-servico__desc">Pesquisa, wireframes e interfaces que guiam o usuário com clareza.</p>
+          <article class="servico-card">
+            <div class="servico-card__icone" aria-hidden="true">▣</div>
+            <h3 class="servico-card__titulo titulo titulo--card">UX / UI</h3>
+            <p class="servico-card__descricao texto texto--secundario">Pesquisa, wireframes e interfaces que guiam o usuário com clareza.</p>
           </article>
-          <article class="card-servico">
-            <div class="card-servico__icone" aria-hidden="true">◎</div>
-            <h3 class="card-servico__titulo">Marketing digital</h3>
-            <p class="card-servico__desc">Estratégia de conteúdo, campanhas e métricas para crescimento mensurável.</p>
+          <article class="servico-card">
+            <div class="servico-card__icone" aria-hidden="true">◎</div>
+            <h3 class="servico-card__titulo titulo titulo--card">Marketing digital</h3>
+            <p class="servico-card__descricao texto texto--secundario">Estratégia de conteúdo, campanhas e métricas para crescimento mensurável.</p>
           </article>
-          <article class="card-servico">
-            <div class="card-servico__icone" aria-hidden="true">◈</div>
-            <h3 class="card-servico__titulo">Manutenção &amp; suporte</h3>
-            <p class="card-servico__desc">Atualizações, segurança e evolução contínua do seu ecossistema digital.</p>
+          <article class="servico-card">
+            <div class="servico-card__icone" aria-hidden="true">◈</div>
+            <h3 class="servico-card__titulo titulo titulo--card">Manutenção &amp; suporte</h3>
+            <p class="servico-card__descricao texto texto--secundario">Atualizações, segurança e evolução contínua do seu ecossistema digital.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="depoimentos" class="secao depoimentos">
+    <section id="depoimentos" class="secao depoimentos depoimentos--destaque">
       <div class="container">
-        <header class="secao__cabecalho">
-          <h2 class="secao__titulo">Depoimentos</h2>
-          <p class="secao__subtitulo">O que nossos parceiros dizem sobre trabalhar conosco.</p>
+        <header class="secao-cabecalho">
+          <h2 class="secao-cabecalho__titulo titulo titulo--secao">Depoimentos</h2>
+          <p class="secao-cabecalho__subtitulo texto texto--secundario">O que nossos parceiros dizem sobre trabalhar conosco.</p>
         </header>
-        <div class="depoimentos__lista">
+        <div class="depoimentos__grade">
           <blockquote class="depoimento">
-            <p class="depoimento__texto">
+            <p class="depoimento__citacao texto texto--citacao">
               “A equipe entregou além do briefing: o novo site elevou nossas conversões em poucas semanas.
               Processo claro do início ao fim.”
             </p>
-            <footer class="depoimento__autor">
+            <footer class="depoimento__rodape">
               <img
                 class="depoimento__avatar"
                 src="https://picsum.photos/seed/cli1/96/96"
@@ -181,17 +183,17 @@
                 loading="lazy"
                 decoding="async"
               >
-              <div>
+              <div class="depoimento__meta">
                 <cite class="depoimento__nome">Marina Costa</cite>
-                <span class="depoimento__cargo">CEO, Bloom Commerce</span>
+                <span class="depoimento__cargo texto texto--secundario texto--pequeno">CEO, Bloom Commerce</span>
               </div>
             </footer>
           </blockquote>
           <blockquote class="depoimento">
-            <p class="depoimento__texto">
+            <p class="depoimento__citacao texto texto--citacao">
               “Branding e desenvolvimento na mesma casa fez toda a diferença. Identidade coerente em todos os pontos de contato.”
             </p>
-            <footer class="depoimento__autor">
+            <footer class="depoimento__rodape">
               <img
                 class="depoimento__avatar"
                 src="https://picsum.photos/seed/cli2/96/96"
@@ -207,17 +209,17 @@
                 loading="lazy"
                 decoding="async"
               >
-              <div>
+              <div class="depoimento__meta">
                 <cite class="depoimento__nome">Rafael Mendes</cite>
-                <span class="depoimento__cargo">Diretor, Estúdio Norte</span>
+                <span class="depoimento__cargo texto texto--secundario texto--pequeno">Diretor, Estúdio Norte</span>
               </div>
             </footer>
           </blockquote>
           <blockquote class="depoimento">
-            <p class="depoimento__texto">
+            <p class="depoimento__citacao texto texto--citacao">
               “Profissionais atentos a performance e acessibilidade. Recomendamos para qualquer projeto sério na web.”
             </p>
-            <footer class="depoimento__autor">
+            <footer class="depoimento__rodape">
               <img
                 class="depoimento__avatar"
                 src="https://picsum.photos/seed/cli3/96/96"
@@ -233,9 +235,9 @@
                 loading="lazy"
                 decoding="async"
               >
-              <div>
+              <div class="depoimento__meta">
                 <cite class="depoimento__nome">Ana Luiza Ferreira</cite>
-                <span class="depoimento__cargo">Marketing Lead, Vértice Saúde</span>
+                <span class="depoimento__cargo texto texto--secundario texto--pequeno">Marketing Lead, Vértice Saúde</span>
               </div>
             </footer>
           </blockquote>
@@ -245,37 +247,37 @@
 
     <section id="contato" class="secao contato">
       <div class="container">
-        <header class="secao__cabecalho">
-          <h2 class="secao__titulo">Contato</h2>
-          <p class="secao__subtitulo">Envie uma mensagem ou visite nosso escritório.</p>
+        <header class="secao-cabecalho">
+          <h2 class="secao-cabecalho__titulo titulo titulo--secao">Contato</h2>
+          <p class="secao-cabecalho__subtitulo texto texto--secundario">Envie uma mensagem ou visite nosso escritório.</p>
         </header>
-        <div class="contato__grid">
-          <address class="contato__info">
-            <h3 class="contato__info-titulo">Onde estamos</h3>
-            <p>
+        <div class="contato__layout">
+          <address class="contato__endereco texto texto--secundario">
+            <h3 class="contato__titulo titulo titulo--sub">Onde estamos</h3>
+            <p class="contato__bloco">
               Av. Paulista, 1000 — Bela Vista<br>
               São Paulo — SP · CEP 01310-100
             </p>
-            <p>
-              <strong>Telefone:</strong> <a href="tel:+551140028922">(11) 4002-8922</a><br>
-              <strong>E-mail:</strong> <a href="mailto:contato@agenciacriativaweb.com.br">contato@agenciacriativaweb.com.br</a>
+            <p class="contato__bloco">
+              <strong class="texto--destaque">Telefone:</strong> <a class="link link--inline" href="tel:+551140028922">(11) 4002-8922</a><br>
+              <strong class="texto--destaque">E-mail:</strong> <a class="link link--inline" href="mailto:contato@agenciacriativaweb.com.br">contato@agenciacriativaweb.com.br</a>
             </p>
-            <p class="contato__horario"><strong>Horário:</strong> seg a sex, 9h–18h</p>
+            <p class="contato__bloco contato__bloco--horario"><strong class="texto--destaque">Horário:</strong> seg a sex, 9h–18h</p>
           </address>
           <form class="formulario" action="#" method="post" aria-label="Formulário de contato">
-            <div class="formulario__campo">
-              <label for="nome">Nome</label>
-              <input type="text" id="nome" name="nome" required autocomplete="name" placeholder="Seu nome completo">
+            <div class="formulario__grupo">
+              <label class="formulario__label" for="nome">Nome</label>
+              <input class="formulario__input" type="text" id="nome" name="nome" required autocomplete="name" placeholder="Seu nome completo">
             </div>
-            <div class="formulario__campo">
-              <label for="email">E-mail</label>
-              <input type="email" id="email" name="email" required autocomplete="email" placeholder="seu@email.com">
+            <div class="formulario__grupo">
+              <label class="formulario__label" for="email">E-mail</label>
+              <input class="formulario__input" type="email" id="email" name="email" required autocomplete="email" placeholder="seu@email.com">
             </div>
-            <div class="formulario__campo">
-              <label for="mensagem">Mensagem</label>
-              <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Conte-nos sobre seu projeto"></textarea>
+            <div class="formulario__grupo">
+              <label class="formulario__label" for="mensagem">Mensagem</label>
+              <textarea class="formulario__textarea" id="mensagem" name="mensagem" rows="5" required placeholder="Conte-nos sobre seu projeto"></textarea>
             </div>
-            <button type="submit" class="btn btn--primario btn--full">Enviar mensagem</button>
+            <button type="submit" class="botao botao--primario botao--bloco">Enviar mensagem</button>
           </form>
         </div>
       </div>
@@ -283,21 +285,21 @@
   </main>
 
   <footer class="rodape">
-    <div class="container rodape__inner">
-      <p class="rodape__marca">© <span id="ano"></span> Agência Criativa Web. Todos os direitos reservados.</p>
-      <ul class="rodape__links">
-        <li><a href="#home">Topo</a></li>
-        <li><a href="#contato">Contato</a></li>
+    <div class="container rodape__layout">
+      <p class="rodape__marca texto texto--secundario texto--pequeno">© <span class="rodape__ano"></span> Agência Criativa Web. Todos os direitos reservados.</p>
+      <ul class="rodape__lista">
+        <li class="rodape__item"><a class="rodape__link link" href="#home">Topo</a></li>
+        <li class="rodape__item"><a class="rodape__link link" href="#contato">Contato</a></li>
       </ul>
     </div>
   </footer>
 
   <script>
-    document.getElementById('ano').textContent = new Date().getFullYear();
-    var toggle = document.getElementById('menu-toggle');
-    var links = document.querySelectorAll('.nav__lista a');
-    links.forEach(function (a) {
-      a.addEventListener('click', function () { toggle.checked = false; });
+    document.querySelector('.rodape__ano').textContent = String(new Date().getFullYear());
+    var menuCheckbox = document.querySelector('#cabecalho-menu');
+    var linksMenu = document.querySelectorAll('.cabecalho__link');
+    linksMenu.forEach(function (link) {
+      link.addEventListener('click', function () { menuCheckbox.checked = false; });
     });
   </script>
 </body>
