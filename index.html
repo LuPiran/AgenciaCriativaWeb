@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Agência Criativa Web — design digital, desenvolvimento web e branding com foco em resultados.">
+  <title>Agência Criativa Web | Design Digital & Desenvolvimento</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <div class="cabecalho__inner">
+      <a href="#home" class="logo" aria-label="Agência Criativa Web — início">
+        <span class="logo__mark" aria-hidden="true"></span>
+        <span class="logo__texto">Agência Criativa <strong>Web</strong></span>
+      </a>
+
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-hidden="true">
+      <label for="menu-toggle" class="menu-hamburguer" aria-label="Abrir menu de navegação">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="nav" aria-label="Principal">
+        <ul class="nav__lista">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#sobre">Sobre Nós</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="secao hero">
+      <div class="hero__conteudo">
+        <p class="hero__selo">Design que converte · Web que performa</p>
+        <h1 class="hero__titulo">Sua marca no centro da experiência digital</h1>
+        <p class="hero__texto">
+          Somos a <strong>Agência Criativa Web</strong>: unimos estratégia, estética e tecnologia para criar
+          presenças digitais memoráveis e mensuráveis.
+        </p>
+        <div class="hero__acoes">
+          <a href="#contato" class="btn btn--primario">Fale conosco</a>
+          <a href="#servicos" class="btn btn--secundario">Ver serviços</a>
+        </div>
+      </div>
+      <figure class="hero__media">
+        <img
+          src="https://picsum.photos/seed/criativa-hero/960/640"
+          srcset="
+            https://picsum.photos/seed/criativa-hero/480/320 480w,
+            https://picsum.photos/seed/criativa-hero/720/480 720w,
+            https://picsum.photos/seed/criativa-hero/960/640 960w,
+            https://picsum.photos/seed/criativa-hero/1200/800 1200w
+          "
+          sizes="(max-width: 48rem) 100vw, min(45vw, 38rem)"
+          width="960"
+          height="640"
+          alt="Equipe colaborando em projeto digital em ambiente moderno"
+          loading="eager"
+          decoding="async"
+        >
+      </figure>
+    </section>
+
+    <section id="sobre" class="secao sobre">
+      <div class="container">
+        <header class="secao__cabecalho">
+          <h2 class="secao__titulo">Sobre Nós</h2>
+          <p class="secao__subtitulo">Propósito, método e valores que guiam cada entrega.</p>
+        </header>
+        <div class="sobre__grid">
+          <div class="sobre__texto">
+            <p>
+              Há mais de uma década ajudamos marcas a se destacarem no ambiente online com identidade
+              consistente e produtos digitais pensados para o usuário final.
+            </p>
+            <p>
+              Nosso diferencial está na <strong>colaboração contínua</strong>: ouvimos, prototipamos,
+              testamos e refinamos até que cada pixel e cada linha de código reflitam a essência do seu negócio.
+            </p>
+            <ul class="sobre__valores">
+              <li><span>Transparência</span> em prazos e entregas</li>
+              <li><span>Excelência</span> em UX e performance</li>
+              <li><span>Inovação</span> com propósito e acessibilidade</li>
+            </ul>
+          </div>
+          <figure class="sobre__media">
+            <img
+              src="https://picsum.photos/seed/criativa-sobre/800/600"
+              srcset="
+                https://picsum.photos/seed/criativa-sobre/400/300 400w,
+                https://picsum.photos/seed/criativa-sobre/600/450 600w,
+                https://picsum.photos/seed/criativa-sobre/800/600 800w
+              "
+              sizes="(max-width: 48rem) 100vw, min(42vw, 32rem)"
+              width="800"
+              height="600"
+              alt="Profissionais em reunião de planejamento de marca"
+              loading="lazy"
+              decoding="async"
+            >
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicos" class="secao servicos">
+      <div class="container">
+        <header class="secao__cabecalho">
+          <h2 class="secao__titulo">Serviços</h2>
+          <p class="secao__subtitulo">Soluções integradas para sua presença digital.</p>
+        </header>
+        <div class="servicos__grid">
+          <article class="card-servico">
+            <div class="card-servico__icone" aria-hidden="true">◆</div>
+            <h3 class="card-servico__titulo">Design gráfico</h3>
+            <p class="card-servico__desc">Identidade visual, peças para redes e materiais impressos com consistência de marca.</p>
+          </article>
+          <article class="card-servico">
+            <div class="card-servico__icone" aria-hidden="true">◇</div>
+            <h3 class="card-servico__titulo">Desenvolvimento web</h3>
+            <p class="card-servico__desc">Sites e aplicações rápidas, responsivas e preparadas para SEO e acessibilidade.</p>
+          </article>
+          <article class="card-servico">
+            <div class="card-servico__icone" aria-hidden="true">○</div>
+            <h3 class="card-servico__titulo">Branding</h3>
+            <p class="card-servico__desc">Naming, posicionamento e diretrizes para uma marca reconhecível e duradoura.</p>
+          </article>
+          <article class="card-servico">
+            <div class="card-servico__icone" aria-hidden="true">▣</div>
+            <h3 class="card-servico__titulo">UX / UI</h3>
+            <p class="card-servico__desc">Pesquisa, wireframes e interfaces que guiam o usuário com clareza.</p>
+          </article>
+          <article class="card-servico">
+            <div class="card-servico__icone" aria-hidden="true">◎</div>
+            <h3 class="card-servico__titulo">Marketing digital</h3>
+            <p class="card-servico__desc">Estratégia de conteúdo, campanhas e métricas para crescimento mensurável.</p>
+          </article>
+          <article class="card-servico">
+            <div class="card-servico__icone" aria-hidden="true">◈</div>
+            <h3 class="card-servico__titulo">Manutenção &amp; suporte</h3>
+            <p class="card-servico__desc">Atualizações, segurança e evolução contínua do seu ecossistema digital.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="depoimentos" class="secao depoimentos">
+      <div class="container">
+        <header class="secao__cabecalho">
+          <h2 class="secao__titulo">Depoimentos</h2>
+          <p class="secao__subtitulo">O que nossos parceiros dizem sobre trabalhar conosco.</p>
+        </header>
+        <div class="depoimentos__lista">
+          <blockquote class="depoimento">
+            <p class="depoimento__texto">
+              “A equipe entregou além do briefing: o novo site elevou nossas conversões em poucas semanas.
+              Processo claro do início ao fim.”
+            </p>
+            <footer class="depoimento__autor">
+              <img
+                class="depoimento__avatar"
+                src="https://picsum.photos/seed/cli1/96/96"
+                srcset="
+                  https://picsum.photos/seed/cli1/48/48 48w,
+                  https://picsum.photos/seed/cli1/96/96 96w,
+                  https://picsum.photos/seed/cli1/144/144 144w
+                "
+                sizes="3rem"
+                width="96"
+                height="96"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              >
+              <div>
+                <cite class="depoimento__nome">Marina Costa</cite>
+                <span class="depoimento__cargo">CEO, Bloom Commerce</span>
+              </div>
+            </footer>
+          </blockquote>
+          <blockquote class="depoimento">
+            <p class="depoimento__texto">
+              “Branding e desenvolvimento na mesma casa fez toda a diferença. Identidade coerente em todos os pontos de contato.”
+            </p>
+            <footer class="depoimento__autor">
+              <img
+                class="depoimento__avatar"
+                src="https://picsum.photos/seed/cli2/96/96"
+                srcset="
+                  https://picsum.photos/seed/cli2/48/48 48w,
+                  https://picsum.photos/seed/cli2/96/96 96w,
+                  https://picsum.photos/seed/cli2/144/144 144w
+                "
+                sizes="3rem"
+                width="96"
+                height="96"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              >
+              <div>
+                <cite class="depoimento__nome">Rafael Mendes</cite>
+                <span class="depoimento__cargo">Diretor, Estúdio Norte</span>
+              </div>
+            </footer>
+          </blockquote>
+          <blockquote class="depoimento">
+            <p class="depoimento__texto">
+              “Profissionais atentos a performance e acessibilidade. Recomendamos para qualquer projeto sério na web.”
+            </p>
+            <footer class="depoimento__autor">
+              <img
+                class="depoimento__avatar"
+                src="https://picsum.photos/seed/cli3/96/96"
+                srcset="
+                  https://picsum.photos/seed/cli3/48/48 48w,
+                  https://picsum.photos/seed/cli3/96/96 96w,
+                  https://picsum.photos/seed/cli3/144/144 144w
+                "
+                sizes="3rem"
+                width="96"
+                height="96"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              >
+              <div>
+                <cite class="depoimento__nome">Ana Luiza Ferreira</cite>
+                <span class="depoimento__cargo">Marketing Lead, Vértice Saúde</span>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="secao contato">
+      <div class="container">
+        <header class="secao__cabecalho">
+          <h2 class="secao__titulo">Contato</h2>
+          <p class="secao__subtitulo">Envie uma mensagem ou visite nosso escritório.</p>
+        </header>
+        <div class="contato__grid">
+          <address class="contato__info">
+            <h3 class="contato__info-titulo">Onde estamos</h3>
+            <p>
+              Av. Paulista, 1000 — Bela Vista<br>
+              São Paulo — SP · CEP 01310-100
+            </p>
+            <p>
+              <strong>Telefone:</strong> <a href="tel:+551140028922">(11) 4002-8922</a><br>
+              <strong>E-mail:</strong> <a href="mailto:contato@agenciacriativaweb.com.br">contato@agenciacriativaweb.com.br</a>
+            </p>
+            <p class="contato__horario"><strong>Horário:</strong> seg a sex, 9h–18h</p>
+          </address>
+          <form class="formulario" action="#" method="post" aria-label="Formulário de contato">
+            <div class="formulario__campo">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" name="nome" required autocomplete="name" placeholder="Seu nome completo">
+            </div>
+            <div class="formulario__campo">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" required autocomplete="email" placeholder="seu@email.com">
+            </div>
+            <div class="formulario__campo">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Conte-nos sobre seu projeto"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primario btn--full">Enviar mensagem</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape__inner">
+      <p class="rodape__marca">© <span id="ano"></span> Agência Criativa Web. Todos os direitos reservados.</p>
+      <ul class="rodape__links">
+        <li><a href="#home">Topo</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('ano').textContent = new Date().getFullYear();
+    var toggle = document.getElementById('menu-toggle');
+    var links = document.querySelectorAll('.nav__lista a');
+    links.forEach(function (a) {
+      a.addEventListener('click', function () { toggle.checked = false; });
+    });
+  </script>
+</body>
+</html>
