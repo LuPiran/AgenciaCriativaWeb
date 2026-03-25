@@ -1,0 +1,45 @@
+// -----------------------------------------------------------------------------
+// Variáveis SASS — cores, tipografia, espaçamentos, breakpoints
+// -----------------------------------------------------------------------------
+
+// Cores
+$cor-fundo: #0c0f14;
+$cor-superficie: #141a22;
+$cor-superficie-alt: #1a222d;
+$cor-texto: #e8ecf1;
+$cor-texto-suave: #9aa4b2;
+$cor-acento: #3d9cf0;
+$cor-acento-forte: #6eb8ff;
+$cor-acento-escuro: #2d7bc4;
+$cor-acento-gradiente: #2563a8;
+$cor-borda-alpha: rgba(255, 255, 255, 0.08);
+$cor-sombra-hero: rgba(0, 0, 0, 0.35);
+$cor-card-hover-borda: rgba(61, 156, 240, 0.35);
+$cor-focus-ring: rgba(61, 156, 240, 0.2);
+
+// Tipografia
+$fonte-base: "DM Sans", system-ui, sans-serif;
+$fonte-display: "Outfit", $fonte-base;
+
+// Espaçamentos (operadores usam estes valores)
+$espaco-xs: 0.5rem;
+$espaco-sm: 1rem;
+$espaco-md: 1.5rem;
+$espaco-lg: 2.5rem;
+$espaco-xl: 4rem;
+
+// Tamanhos e layout
+$raio: 0.75rem;
+$raio-input: $raio - 0.15rem;
+$cabecalho-altura: 4.25rem;
+$container-largura: 72rem;
+$formulario-grupo-gap: $espaco-sm * 1.125;
+
+// Transição
+$transicao: 0.25s ease;
+
+// Breakpoints
+$bp-menu: 48rem;
+$bp-servicos-grid: 48.0625rem;
+$bp-depoimentos-grid: 62rem;
+$bp-html-scale: 75em;

@@ -1,0 +1,9 @@
+// =============================================================================
+// Agência Criativa Web — entrada principal (@use)
+// Ordem: variáveis e mixins são carregados pelos partials que precisam deles
+// =============================================================================
+@charset "utf-8";
+
+@use 'base';
+@use 'layout';
+@use 'componentes';

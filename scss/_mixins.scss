@@ -1,0 +1,59 @@
+// -----------------------------------------------------------------------------
+// Mixins reutilizáveis
+// -----------------------------------------------------------------------------
+@use 'variaveis' as *;
+
+/// Espaçamento vertical padrão entre blocos de conteúdo
+@mixin espacamento-em-bloco($multiplicador: 1) {
+  margin-bottom: $espaco-sm * $multiplicador;
+}
+
+/// Estrutura comum de botão (flex, padding, transição)
+@mixin botao-estrutura {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75em 1.5em;
+  font-family: inherit;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  border-radius: $raio;
+  border: 2px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+  transition:
+    background $transicao,
+    color $transicao,
+    border-color $transicao,
+    filter $transicao;
+}
+
+/// Lista sem marcadores padrão do user agent
+@mixin lista-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/// Container flexível centralizado (usado em grades de seção)
+@mixin flex-centralizado($gap: $espaco-sm) {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: $gap;
+}
+
+/// Media query — até largura do menu mobile
+@mixin ate-menu-mobile {
+  @media (max-width: $bp-menu) {
+    @content;
+  }
+}
+
+/// Media query — prefers-reduced-motion
+@mixin reduzir-movimento {
+  @media (prefers-reduced-motion: reduce) {
+    @content;
+  }
+}

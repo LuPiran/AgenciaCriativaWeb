@@ -1,0 +1,157 @@
+// -----------------------------------------------------------------------------
+// Base: reset, tokens CSS (:root), tipografia e utilitários de texto
+// -----------------------------------------------------------------------------
+@use 'sass:meta';
+@use 'variaveis' as *;
+@use 'mixins' as *;
+
+:root {
+  --cor-fundo: #{$cor-fundo};
+  --cor-superficie: #{$cor-superficie};
+  --cor-superficie-alt: #{$cor-superficie-alt};
+  --cor-texto: #{$cor-texto};
+  --cor-texto-suave: #{$cor-texto-suave};
+  --cor-acento: #{$cor-acento};
+  --cor-acento-forte: #{$cor-acento-forte};
+  --cor-borda: #{$cor-borda-alpha};
+  --fonte-base: #{meta.inspect($fonte-base)};
+  --fonte-display: "Outfit", var(--fonte-base);
+  --espaco-xs: #{$espaco-xs};
+  --espaco-sm: #{$espaco-sm};
+  --espaco-md: #{$espaco-md};
+  --espaco-lg: #{$espaco-lg};
+  --espaco-xl: #{$espaco-xl};
+  --raio: #{$raio};
+  --cabecalho-altura: #{$cabecalho-altura};
+  --transicao: #{$transicao};
+  --container-largura: #{$container-largura};
+  --container-padding: var(--espaco-sm);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+
+  @media (min-width: $bp-html-scale) {
+    font-size: 106.25%;
+  }
+}
+
+.pagina {
+  margin: 0;
+  min-height: 100vh;
+  min-height: 100dvh;
+  font-family: var(--fonte-base);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--cor-texto);
+  background-color: var(--cor-fundo);
+  background-image:
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(61, 156, 240, 0.18), transparent),
+    radial-gradient(ellipse 60% 40% at 100% 50%, rgba(110, 184, 255, 0.06), transparent);
+}
+
+.principal {
+  display: block;
+}
+
+.container {
+  max-width: min(90vw, var(--container-largura));
+  margin-inline: auto;
+  padding-inline: var(--container-padding);
+}
+
+.secao {
+  padding-block: clamp(3rem, 8vw, var(--espaco-xl));
+}
+
+.secao-cabecalho {
+  text-align: center;
+  margin-inline: auto;
+  margin-bottom: clamp(2rem, 5vw, 3rem);
+  max-width: 42rem;
+}
+
+.titulo {
+  font-family: var(--fonte-display);
+  font-weight: 700;
+  line-height: 1.2;
+
+  &--display {
+    font-size: clamp(2rem, 5vw, 3.25rem);
+    letter-spacing: -0.03em;
+  }
+
+  &--secao {
+    font-size: clamp(1.75rem, 4vw, 2.25rem);
+    letter-spacing: -0.02em;
+    margin: 0 0 0.5em;
+  }
+
+  &--card {
+    font-size: 1.125rem;
+    margin: 0 0 0.5em;
+  }
+
+  &--sub {
+    font-size: 1.125rem;
+    margin: 0 0 1em;
+  }
+}
+
+.texto {
+  margin: 0;
+
+  &--secundario {
+    color: var(--cor-texto-suave);
+  }
+
+  &--destaque {
+    color: var(--cor-texto);
+    font-weight: 600;
+  }
+
+  &--pequeno {
+    font-size: 0.8125rem;
+  }
+
+  &--citacao {
+    font-size: 0.9375rem;
+    font-style: italic;
+    line-height: 1.55;
+  }
+}
+
+.link {
+  color: var(--cor-acento-forte);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &--inline {
+    font-weight: inherit;
+  }
+}
+
+.lista-valores {
+  margin: $espaco-md 0 0;
+  padding-left: 1.25em;
+  color: var(--cor-texto-suave);
+
+  &__item {
+    margin-bottom: 0.65em;
+  }
+
+  &__rotulo {
+    color: var(--cor-texto);
+    font-weight: 600;
+  }
+}
